@@ -1,7 +1,6 @@
 import { BloomEffect, EffectComposer, EffectPass, RenderPass, SMAAEffect, SMAAPreset } from 'postprocessing';
 import { FC, useEffect, useRef } from 'react';
 import * as THREE from 'three';
-
 interface Distortion {
   uniforms: Record<string, { value: any }>;
   getDistortion: string;
@@ -1227,7 +1226,7 @@ const Hyperspeed: FC<HyperspeedProps> = ({ effectOptions = {} }) => {
   useEffect(() => {
     if (appRef.current) {
       appRef.current.dispose();
-      const container = document.getElementById('lights');
+      const container = document.getElementById('this_is_my_id');
       if (container) {
         while (container.firstChild) {
           container.removeChild(container.firstChild);
@@ -1254,7 +1253,7 @@ const Hyperspeed: FC<HyperspeedProps> = ({ effectOptions = {} }) => {
     };
   }, [mergedOptions]);
 
-  return <div id="lights" className="w-full h-full" ref={hyperspeed}></div>;
+  return <div id="this_is_my_id" className="w-full h-full" ref={hyperspeed}></div>;
 };
 
 export default Hyperspeed;
