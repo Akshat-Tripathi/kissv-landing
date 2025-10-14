@@ -1,5 +1,6 @@
 import { MoveHorizontal, Sparkles } from 'lucide-react';
 import { useState } from 'react';
+import GradientText from './GradientText';
 
 export default function EnhancedMode() {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -32,16 +33,23 @@ export default function EnhancedMode() {
   };
 
   return (
-    <section className="py-32 bg-slate-50">
+    <section className="py-32 bg-slate-200">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">
           <div className="inline-flex items-center justify-center mb-6">
             <Sparkles className="w-12 h-12 text-slate-900" strokeWidth={1.5} />
           </div>
-          <h2 className="text-5xl md:text-6xl font-light tracking-tight text-slate-900 mb-6">
+          <h2 className="text-slate-700 mb-6 text-6xl md:text-7xl font-bold tracking-tight z-10">
             Boost Quality with{' '}
-            <span className="font-normal">Enhanced Mode</span>
+            <GradientText
+              colors={["#2596be", "#4c57c8", "#478ab5", "#3892b7", "#5097c9"]}
+              animationSpeed={1}
+              showBorder={false}
+              className="text-6xl md:text-7xl font-bold tracking-tight"
+            >
+              Enhanced Mode
+            </GradientText>
           </h2>
           <p className="text-xl text-slate-600 font-light">
             Higher quality video with the same number of steps.

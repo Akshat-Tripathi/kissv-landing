@@ -20,7 +20,7 @@ export default function Hero() {
           <div className="flex items-center space-x-3">
             <div className="relative">
               <Zap className="w-10 h-10 text-slate-200" strokeWidth={2} opacity={"75%"} />
-              <div className="absolute inset-0 blur-xl bg-blue-400/20"></div>
+              <div className="absolute inset-0"></div>
             </div>
             <h1 className="text-4xl font-medium tracking-tight text-slate-200 text-opacity-75">
               KISS-V
@@ -50,7 +50,7 @@ export default function Hero() {
             blur={0.5}
             contrast={1.2}
             brightness={1.1}
-            saturation={1.2}
+            saturation={1}
             className='max-w-48'
           >
             <button className="py-2 text-slate-200 text-lg font-medium rounded-lg transition-all duration-300 hover:scale-105">
@@ -63,7 +63,7 @@ export default function Hero() {
             blur={0.5}
             contrast={1.2}
             brightness={1.1}
-            saturation={1.2}
+            saturation={1}
             className='max-w-48'
           >
 
