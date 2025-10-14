@@ -1,38 +1,42 @@
+import { LiquidGlass } from '@liquidglass/react';
 import { Zap } from 'lucide-react';
-import HyperSpeed from "./bits/Hyperspeed";
+import Iridescence from './Iridescence';
 
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* Hyperspeed Background - positioned absolutely */}
       <div className="absolute inset-0 w-screen h-full">
-        <HyperSpeed />
+        <Iridescence
+          color={[0.3, 0.6, 0.8]}
+          mouseReact={false}
+          speed={0.2}
+        />
       </div>
-      
+
       {/* Content - with relative positioning to appear above background */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 py-20 text-center">
         {/* Logo/Brand */}
         <div className="flex items-center justify-center mb-8">
           <div className="flex items-center space-x-3">
             <div className="relative">
-              <Zap className="w-10 h-10 text-slate-200" strokeWidth={2} />
+              <Zap className="w-10 h-10 text-slate-200" strokeWidth={2} opacity={"75%"} />
               <div className="absolute inset-0 blur-xl bg-blue-400/20"></div>
             </div>
-            <h1 className="text-4xl font-light tracking-tight text-slate-200">
+            <h1 className="text-4xl font-medium tracking-tight text-slate-200 text-opacity-75">
               KISS-V
             </h1>
           </div>
         </div>
 
         {/* Main Headline */}
-        <h2 className="text-6xl md:text-7xl lg:text-8xl font-light tracking-tight text-slate-200 mb-8 leading-none">
+        <h2 className="text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight text-opacity-75 text-slate-200 mb-8 leading-none">
           The Fastest Way to
           <br />
-          <span className="font-normal">Create AI Videos</span>
+          <span className="font-medium text-slate-200 text-opacity-75">Create AI Videos</span>
         </h2>
 
         {/* Subheadline */}
-        <p className="text-xl md:text-2xl text-slate-400 max-w-4xl mx-auto mb-12 leading-relaxed font-light">
+        <p className="text-xl md:text-2xl text-slate-200 max-w-4xl mx-auto mb-12 leading-relaxed font-normal mt-40">
           The most powerful inference engine for generative video delivering up to{' '}
           <span className="font-medium text-slate-200">14X speedups</span> with no loss in quality.
           <br />
@@ -40,15 +44,33 @@ export default function Hero() {
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="group relative px-8 py-4 bg-slate-900 text-white text-lg font-medium rounded-lg overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl">
-            <span className="relative z-10">Prove it</span>
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-          </button>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-10">
+          <LiquidGlass
+            borderRadius={10}
+            blur={0.5}
+            contrast={1.2}
+            brightness={1.1}
+            saturation={1.2}
+            className='max-w-48'
+          >
+            <button className="py-2 text-slate-200 text-lg font-medium rounded-lg transition-all duration-300 hover:scale-105">
+              <span className="relative z-10 text-lg">Prove it</span>
+            </button>
+          </LiquidGlass>
 
-          <button className="px-8 py-4 bg-white text-slate-200 text-lg font-medium rounded-lg border-2 border-slate-900 transition-all duration-300 hover:scale-105 hover:bg-slate-900 hover:text-white">
-            Let's Talk
-          </button>
+          <LiquidGlass
+            borderRadius={10}
+            blur={0.5}
+            contrast={1.2}
+            brightness={1.1}
+            saturation={1.2}
+            className='max-w-48'
+          >
+
+            <button className="py-2 text-slate-200 text-lg font-medium rounded-lg transition-all duration-300 hover:scale-105">
+              Let's Talk
+            </button>
+          </LiquidGlass>
         </div>
       </div>
     </section>
