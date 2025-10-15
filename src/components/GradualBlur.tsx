@@ -1,5 +1,5 @@
-import React, { CSSProperties, useEffect, useRef, useState, useMemo, PropsWithChildren } from 'react';
 import * as math from 'mathjs';
+import React, { CSSProperties, PropsWithChildren, useEffect, useMemo, useRef, useState } from 'react';
 
 type GradualBlurProps = PropsWithChildren<{
   position?: 'top' | 'bottom' | 'left' | 'right';

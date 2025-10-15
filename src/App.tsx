@@ -1,5 +1,6 @@
 import DraftMode from './components/DraftMode';
 import EnhancedMode from './components/EnhancedMode';
+import Footer from './components/Footer';
 import GradualBlur from './components/GradualBlur';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
@@ -23,6 +24,7 @@ function App() {
       <Performance />
       <DraftMode />
       <EnhancedMode />
+      <Footer />
     </div>
   );
 }
