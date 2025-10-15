@@ -4,8 +4,8 @@ import GradientText from './GradientText';
 export default function Performance() {
   // Mock data for the chart
   const data = [
-    { label: 'Standard', value: 100, color: 'bg-slate-300' },
-    { label: 'KISS-V', value: 1400, color: 'bg-slate-900' }
+    { label: 'Diffusers', value: 100, color: 'bg-yellow-500' },
+    { label: 'KISS-V', value: 1400, color: 'bg-green-600' }
   ];
 
   const maxValue = Math.max(...data.map(d => d.value));
@@ -35,7 +35,9 @@ export default function Performance() {
           <p className="text-xl text-slate-600 max-w-3xl mx-auto font-light">
             Faster video generation without sacrificing output quality.
             <br />
-            No quantisation, no distillation, no nonsense.
+          </p>
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto font-medium">
+            No Quantisation, No Distillation, No Nonsense.
           </p>
         </div>
 

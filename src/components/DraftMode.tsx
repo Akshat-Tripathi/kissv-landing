@@ -36,7 +36,7 @@ export default function DraftMode() {
     <section className="py-32 bg-slate-200">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-10">
           <h2 className="text-slate-700 mb-6 text-6xl md:text-7xl font-bold tracking-tight">
             Go Even Faster with{' '}
             <GradientText
@@ -48,13 +48,15 @@ export default function DraftMode() {
               Draft Mode
             </GradientText>
           </h2>
-          <p className="text-xl text-slate-600 font-light">
-            Spot the difference:
-          </p>
         </div>
 
         {/* Video Comparison Panel */}
         <div className="max-w-5xl mx-auto">
+        <p className="text-xl text-slate-600 font-medium text-center">
+          Spot the difference
+          <br/>
+          <br/>
+        </p>
           <div
             className="relative aspect-video bg-slate-100 rounded-2xl overflow-hidden shadow-xl cursor-col-resize"
             onMouseDown={handleMouseDown}

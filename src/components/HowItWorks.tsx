@@ -5,17 +5,17 @@ export default function HowItWorks() {
   const features = [
     {
       icon: Box,
-      title: 'Bring your own Model',
+      title: 'Any Model',
       description: 'Create with all your favourite open source video models, like Wan, Ovi, Mochi etc'
     },
     {
       icon: Cpu,
-      title: 'Bring your own GPUs',
+      title: 'Any GPU',
       description: 'Effortlessly deploy KISS-V on Nvidia and AMD GPUs'
     },
     {
       icon: Palette,
-      title: 'Bring your own Style',
+      title: 'Any Style',
       description: 'Tailor your models with any LoRAs or Controlnets you can think of'
     }
   ];
