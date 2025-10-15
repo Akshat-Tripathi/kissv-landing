@@ -3,6 +3,15 @@ import { Zap } from 'lucide-react';
 import Iridescence from './Iridescence';
 
 export default function Hero() {
+  const openCalendly = () => {
+    window.open('https://calendar.app.google/vHNGF1iJbx25E8JQ7');
+  };
+
+  const openBenchmarks = () => {
+    window.open('https://insights.krai.ai/benchmarking-kiss-v');
+  }
+
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       <div className="absolute inset-0 w-screen h-full">
@@ -53,7 +62,7 @@ export default function Hero() {
             saturation={1}
             className='max-w-48'
           >
-            <button className="py-2 text-slate-200 text-lg font-medium rounded-lg transition-all duration-300 hover:scale-105">
+            <button onClick={openBenchmarks} className="py-2 text-slate-200 text-lg font-medium rounded-lg transition-all duration-300 hover:scale-105">
               <span className="relative z-10 text-lg">Prove it</span>
             </button>
           </LiquidGlass>
@@ -67,7 +76,7 @@ export default function Hero() {
             className='max-w-48'
           >
 
-            <button className="py-2 text-slate-200 text-lg font-medium rounded-lg transition-all duration-300 hover:scale-105">
+            <button onClick={openCalendly} className="py-2 text-slate-200 text-lg font-medium rounded-lg transition-all duration-300 hover:scale-105">
               Let's Talk
             </button>
           </LiquidGlass>
