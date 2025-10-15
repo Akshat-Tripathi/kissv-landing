@@ -11,7 +11,7 @@ export default function Performance() {
   const maxValue = Math.max(...data.map(d => d.value));
 
   return (
-    <section className="py-32 bg-slate-200">
+    <section className="bg-slate-200">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-20">
