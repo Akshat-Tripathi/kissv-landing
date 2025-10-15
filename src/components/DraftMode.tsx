@@ -1,5 +1,5 @@
-import { MoveHorizontal } from 'lucide-react';
 import { useState } from 'react';
+import { ReactCompareSlider } from 'react-compare-slider';
 import GradientText from './GradientText';
 
 export default function DraftMode() {
@@ -52,59 +52,20 @@ export default function DraftMode() {
 
         {/* Video Comparison Panel */}
         <div className="max-w-5xl mx-auto">
-        <p className="text-xl text-slate-600 font-medium text-center">
-          Spot the difference
-          <br/>
-          <br/>
-        </p>
-          <div
-            className="relative aspect-video bg-slate-100 rounded-2xl overflow-hidden shadow-xl cursor-col-resize"
-            onMouseDown={handleMouseDown}
-            onMouseUp={handleMouseUp}
-            onMouseLeave={handleMouseUp}
-            onMouseMove={handleMouseMove}
-            onTouchStart={handleMouseDown}
-            onTouchEnd={handleMouseUp}
-            onTouchMove={handleTouchMove}
-          >
-            {/* Standard Video (Left Side) */}
-            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-200 to-slate-300">
-              <div className="text-center">
-                <p className="text-2xl font-medium text-slate-700 mb-2">Standard Mode</p>
-                <p className="text-slate-600 font-light">Video placeholder</p>
-              </div>
-            </div>
+          <p className="text-xl text-slate-600 font-medium text-center">
+            Spot the difference
+            <br />
+            <br />
+          </p>
 
-            {/* Draft Mode Video (Right Side) - Clipped */}
-            <div
-              className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-slate-700 to-slate-900"
-              style={{ clipPath: `inset(0 0 0 ${sliderPosition}%)` }}
-            >
-              <div className="text-center">
-                <p className="text-2xl font-medium text-white mb-2">Draft Mode</p>
-                <p className="text-slate-300 font-light">Video placeholder</p>
-              </div>
-            </div>
-
-            {/* Slider */}
-            <div
-              className="absolute inset-y-0 w-1 bg-white shadow-2xl"
-              style={{ left: `${sliderPosition}%` }}
-            >
-              {/* Slider Handle */}
-              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-2xl flex items-center justify-center">
-                <MoveHorizontal className="w-6 h-6 text-slate-900" strokeWidth={2} />
-              </div>
-            </div>
-
-            {/* Labels */}
-            <div className="absolute top-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-lg">
-              <p className="text-sm font-medium text-slate-900">Standard</p>
-            </div>
-            <div className="absolute top-6 right-6 bg-slate-900/90 backdrop-blur-sm px-4 py-2 rounded-lg">
-              <p className="text-sm font-medium text-white">Draft Mode</p>
-            </div>
-          </div>
+          <ReactCompareSlider
+            itemOne={
+              <video src="./good_f1.mp4" autoPlay={true} loop={true} muted={true} playsInline={true} />
+            }
+            itemTwo={
+              <video src="./reference_video.mp4" autoPlay loop muted playsInline />
+            }
+          />
 
           {/* Caption */}
           <p className="text-center text-slate-600 mt-8 font-light">
