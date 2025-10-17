@@ -9,12 +9,21 @@ export default function EnhancedMode() {
         {/* Section Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center justify-center mb-6">
-            <Sparkles className="w-12 h-12 text-slate-200" strokeWidth={2} />
+            <svg className="w-12 h-12">
+              <linearGradient id="sparkles-gradient" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop stopColor="#f8a5c2" offset="0%" />
+                <stop stopColor="#f78fb3" offset="20%" />
+                <stop stopColor="#3dc1d3" offset="30%" />
+                <stop stopColor="#63cdda" offset="40%" />
+              </linearGradient>
+              <Sparkles size="100%" strokeWidth={2} stroke="url(#sparkles-gradient)" />
+            </svg>
+
           </div>
           <h2 className="text-slate-200 mb-6 text-6xl md:text-7xl font-bold tracking-tight z-10">
             Boost Quality with
             <GradientText
-              colors={["#2596be", "#4c57c8", "#478ab5", "#3892b7", "#5097c9"]}
+              colors={["#f8a5c2", "#f78fb3", "#3dc1d3", "#63cdda", "#3dc1d3", "#f78fb3", "#f8a5c2", "#f78fb3", "#3dc1d3", "#63cdda", "#3dc1d3"]}
               animationSpeed={1}
               showBorder={false}
               className="text-6xl md:text-8xl font-bold tracking-tight"
