@@ -34,16 +34,16 @@ export default function DraftMode() {
 
           <ReactCompareSlider
             itemOne={
-              <video src="/assets/watch_20_full.mp4" autoPlay={true} loop={true} muted={true} playsInline={true} className="rounded-2xl" />
+              <video src="https://insights.krai.ai/assets/watch_20_full.mp4" autoPlay={true} loop={true} muted={true} playsInline={true} className="rounded-2xl" />
             }
             itemTwo={
-              <video src="/assets/watch_20.mp4" autoPlay loop muted playsInline className="rounded-2xl" />
+              <video src="https://insights.krai.ai/assets/watch_20.mp4" autoPlay loop muted playsInline className="rounded-2xl" />
             }
           />
 
           {/* Caption */}
-          <p className="text-center text-slate-200 mt-8 font-light">
-            Drag the slider to compare video quality
+          <p className="text-center text-slate-200 mt-4 font-light">
+            *Both videos generated with the same prompts, number of steps, Wan2.2 model, seed and other settings.
           </p>
         </div>
       </div>

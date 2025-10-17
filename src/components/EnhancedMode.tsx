@@ -32,29 +32,29 @@ export default function EnhancedMode() {
 
           <ReactCompareSlider
             itemOne={
-              <video src="/assets/baking.mp4" autoPlay={true} loop={true} muted={true} playsInline={true} className="rounded-2xl" />
+              <video src="https://insights.krai.ai/assets/baking.mp4" autoPlay={true} loop={true} muted={true} playsInline={true} className="rounded-2xl" />
             }
             itemTwo={
-              <video src="/assets/baking_enhanced.mp4" autoPlay loop muted playsInline className="rounded-2xl" />
+              <video src="https://insights.krai.ai/assets/baking_enhanced.mp4" autoPlay loop muted playsInline className="rounded-2xl" />
             }
           />
         </div>
 
         {/* Caption */}
-        <p className="text-center text-slate-200 mt-8 font-light">
-          Drag the slider to compare video quality
+        <p className="text-center text-slate-200 mt-4 font-light">
+          *Both videos generated with the same prompts, number of steps, Wan2.2 model, seed and other settings.
         </p>
       </div>
 
       {/* Bottom CTA */}
-      <div className="text-center mt-24">
+      {/* <div className="text-center mt-24">
         <p className="text-2xl text-slate-200 mb-8 font-light">
           Ready to accelerate your video generation?
         </p>
         <button className="px-10 py-5 bg-slate-200 text-slate-900 text-lg font-medium rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl">
           Get Started Today
         </button>
-      </div>
+      </div> */}
     </section >
   );
 }

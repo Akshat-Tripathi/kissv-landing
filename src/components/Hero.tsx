@@ -14,7 +14,7 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       <div className="absolute inset-0 w-screen h-screen">
-        <video src="/assets/title_background.mp4" autoPlay={true} loop={true} muted={true} playsInline={true} className="absolute top-0 left-0 w-full h-full object-cover"></video>
+        <video src="https://insights.krai.ai/assets/title_background.mp4" autoPlay={true} loop={true} muted={true} playsInline={true} className="absolute top-0 left-0 w-full h-full object-cover"></video>
       </div>
 
       {/* Content - with relative positioning to appear above background */}
