@@ -15,13 +15,21 @@ export default function Performance() {
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-8">
+          <svg width="0" height="0">
+            <linearGradient id="flame-gradient" x1="100%" y1="100%" x2="100%" y2="0%">
+              <stop stopColor="#e15f41" offset="0%" />
+              <stop stopColor="#f19066" offset="70%" />
+              <stop stopColor="#f5cd79" offset="100%" />
+            </linearGradient>
+          </svg>
+
           <div className="inline-flex items-center justify-center mb-6">
-            <Flame className="w-12 h-12 text-slate-200" strokeWidth={2} />
+            <Flame className="w-12 h-12 text-slate-200" strokeWidth={2} stroke="url(#flame-gradient)" />
           </div>
           <h2 className="text-slate-200 mb-6 text-6xl md:text-7xl font-bold tracking-tight">
-            Go Fast with{' '}
+            Go Fast with
             <GradientText
-              colors={["#2596be", "#4c57c8", "#478ab5", "#3892b7", "#5097c9"]}
+              colors={["#e15f41", "#f19066", "#f5cd79", "#f19066", "#e15f41", "#f19066", "#f5cd79", "#f19066", "#e15f41"]}
               animationSpeed={1}
               showBorder={false}
               className="text-6xl md:text-7xl font-bold tracking-tight"
@@ -76,7 +84,7 @@ export default function Performance() {
           <div className="mt-8 pt-8 border-t border-slate-200">
             <p className="text-sm text-slate-200 text-center font-light">
               * Measured using Wan2.2-T2V-A14B on 8xH100. 720x1280 video, 81 frames, 20 steps.
-              <br/> KISS-V achieved 58.3s E2E latency
+              <br /> KISS-V achieved 58.3s E2E latency
             </p>
           </div>
         </div>
