@@ -1,6 +1,5 @@
 import { LiquidGlass } from '@liquidglass/react';
 import { Zap } from 'lucide-react';
-import Iridescence from './Iridescence';
 
 export default function Hero() {
   const openCalendly = () => {
@@ -14,12 +13,8 @@ export default function Hero() {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      <div className="absolute inset-0 w-screen h-full">
-        <Iridescence
-          color={[0.3, 0.6, 0.8]}
-          mouseReact={false}
-          speed={0.2}
-        />
+      <div className="absolute inset-0 w-screen h-screen">
+        <video src="/assets/title_background.mp4" autoPlay={true} loop={true} muted={true} playsInline={true} className="absolute top-0 left-0 w-full h-full object-cover"></video>
       </div>
 
       {/* Content - with relative positioning to appear above background */}
@@ -28,7 +23,7 @@ export default function Hero() {
         <div className="flex items-center justify-center mb-8">
           <div className="flex items-center space-x-3">
             <div className="relative">
-              <Zap className="w-10 h-10 text-slate-200" strokeWidth={2} opacity={"75%"} />
+              <Zap className="w-10 h-10 text-slate-200" strokeWidth={2} />
               <div className="absolute inset-0"></div>
             </div>
             <h1 className="text-4xl font-medium tracking-tight text-slate-200 text-opacity-75">
@@ -38,14 +33,17 @@ export default function Hero() {
         </div>
 
         {/* Main Headline */}
-        <h2 className="text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight text-opacity-75 text-slate-200 mb-8 leading-none">
+        <h2 className="text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight text-slate-200 mb-8 leading-none text-opacity-75">
           The Fastest Way to
           <br />
           <span className="font-medium text-slate-200 text-opacity-75">Create AI Videos</span>
         </h2>
 
+        {/* Padding */}
+        <div className="py-14"></div>
+
         {/* Subheadline */}
-        <p className="text-xl md:text-2xl text-slate-200 max-w-4xl mx-auto mb-12 leading-relaxed font-normal mt-40">
+        <p className="text-xl md:text-2xl text-slate-200 max-w-4xl mx-auto mb-4 leading-relaxed font-normal mt-40">
           The most powerful inference engine for generative video delivering up to{' '}
           <span className="font-medium text-slate-200">14X speedups</span> with no loss in quality.
           <br />

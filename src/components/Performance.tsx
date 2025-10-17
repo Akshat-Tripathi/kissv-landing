@@ -1,4 +1,4 @@
-import { TrendingUp } from 'lucide-react';
+import { Flame } from 'lucide-react';
 import GradientText from './GradientText';
 
 export default function Performance() {
@@ -11,14 +11,14 @@ export default function Performance() {
   const maxValue = Math.max(...data.map(d => d.value));
 
   return (
-    <section className="bg-slate-200">
+    <section className="bg-slate-900">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center mb-6">
-            <TrendingUp className="w-12 h-12 text-slate-900" strokeWidth={1.5} />
+            <Flame className="w-12 h-12 text-slate-200" strokeWidth={2} />
           </div>
-          <h2 className="text-slate-700 mb-6 text-6xl md:text-7xl font-bold tracking-tight">
+          <h2 className="text-slate-200 mb-6 text-6xl md:text-7xl font-bold tracking-tight">
             Go Fast with{' '}
             <GradientText
               colors={["#2596be", "#4c57c8", "#478ab5", "#3892b7", "#5097c9"]}
@@ -29,28 +29,28 @@ export default function Performance() {
               KISS-V
             </GradientText>
           </h2>
-          <p className="text-3xl font-normal text-slate-900 mb-4">
+          <p className="text-3xl font-normal text-slate-200 mb-4">
             Up to 14x Faster
           </p>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto font-light">
+          <p className="text-xl text-slate-200 max-w-3xl mx-auto font-normal">
             Faster video generation without sacrificing output quality.
             <br />
           </p>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto font-medium">
+          <p className="text-xl text-slate-200 max-w-3xl mx-auto font-medium">
             No Quantisation, No Distillation, No Nonsense.
           </p>
         </div>
 
         {/* Bar Chart */}
-        <div className="max-w-4xl mx-auto bg-white rounded-2xl p-12 shadow-sm">
+        <div className="max-w-4xl mx-auto bg-slate-900 rounded-2xl p-12 shadow-sm">
           <div className="space-y-8">
             {data.map((item, index) => (
               <div key={index} className="space-y-3">
                 <div className="flex items-center justify-between">
-                  <span className="text-lg font-medium text-slate-900">
+                  <span className="text-lg font-medium text-slate-200">
                     {item.label}
                   </span>
-                  <span className="text-lg font-light text-slate-600">
+                  <span className="text-lg font-light text-slate-200">
                     {item.value === 100 ? 'Baseline' : `${item.value / 100}x faster`}
                   </span>
                 </div>
@@ -74,8 +74,9 @@ export default function Performance() {
 
           {/* Chart Footer */}
           <div className="mt-8 pt-8 border-t border-slate-200">
-            <p className="text-sm text-slate-500 text-center font-light">
-              Performance measured on industry-standard benchmarks
+            <p className="text-sm text-slate-200 text-center font-light">
+              * Measured using Wan2.2-T2V-A14B on 8xH100. 720x1280 video, 81 frames, 20 steps.
+              <br/> KISS-V achieved 58.3s E2E latency
             </p>
           </div>
         </div>
