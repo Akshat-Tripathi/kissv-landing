@@ -26,17 +26,17 @@ export default function Hero() {
               <Zap className="w-10 h-10 text-slate-200" strokeWidth={2} />
               <div className="absolute inset-0"></div>
             </div>
-            <h1 className="text-4xl font-medium tracking-tight text-slate-200 text-opacity-75">
+            <h1 className="text-4xl font-medium tracking-tight text-slate-200">
               KISS-V
             </h1>
           </div>
         </div>
 
         {/* Main Headline */}
-        <h2 className="text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight text-slate-200 mb-8 leading-none text-opacity-75">
+        <h2 className="text-6xl md:text-7xl lg:text-8xl font-medium tracking-tight text-slate-200 mb-8 leading-none">
           The Fastest Way to
           <br />
-          <span className="font-medium text-slate-200 text-opacity-75">Create AI Videos</span>
+          <span className="font-medium text-slate-200">Create AI Videos</span>
         </h2>
 
         {/* Padding */}

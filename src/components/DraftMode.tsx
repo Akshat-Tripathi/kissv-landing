@@ -4,7 +4,7 @@ import GradientText from './GradientText';
 
 export default function DraftMode() {
   return (
-    <section className="py-20 bg-slate-900">
+    <section className="py-20 bg-neutral-900">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-10">
