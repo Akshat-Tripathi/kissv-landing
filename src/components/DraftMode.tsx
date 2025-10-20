@@ -50,7 +50,7 @@ export default function DraftMode() {
 
           {/* Caption */}
           <p className="text-center text-slate-200 mt-4 font-light">
-            *Both videos generated with the same prompts, number of steps, Wan2.2 model, seed and other settings.
+            *Both videos generated with the same prompts, number of steps (20), Wan2.2 model, seed and other settings.
           </p>
         </div>
       </div>
