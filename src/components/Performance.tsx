@@ -11,7 +11,7 @@ export default function Performance() {
   const maxValue = Math.max(...data.map(d => d.value));
 
   return (
-    <section className="bg-slate-900">
+    <section className="bg-neutral-900">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-8">
@@ -50,7 +50,7 @@ export default function Performance() {
         </div>
 
         {/* Bar Chart */}
-        <div className="max-w-4xl mx-auto bg-slate-900 rounded-2xl p-12 shadow-sm">
+        <div className="max-w-4xl mx-auto bg-neutral-900 rounded-2xl p-12 shadow-sm">
           <div className="space-y-8">
             {data.map((item, index) => (
               <div key={index} className="space-y-3">

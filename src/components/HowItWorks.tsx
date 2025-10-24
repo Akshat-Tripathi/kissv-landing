@@ -27,7 +27,7 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section className="py-32 bg-slate-900">
+    <section className="py-32 bg-neutral-900">
       <div className="max-w-7xl mx-auto px-6">
         {/* Section Header */}
         <div className="text-left mb-20">
@@ -62,7 +62,7 @@ export default function HowItWorks() {
                     </svg>
                     <feature.icon className="w-16 h-16 text-slate-200 text-opacity-75" strokeWidth={2} stroke={`url(#${feature.title.replace(' ', '-')})`} />
                   </div>
-                  <div className="absolute inset-0 bg-slate-900 rounded-2xl blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-neutral-900 rounded-2xl blur-xl opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
                 </div>
               </div>
 
