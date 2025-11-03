@@ -1,20 +1,11 @@
-import { LiquidGlass } from '@liquidglass/react';
 import { Zap } from 'lucide-react';
 
 export default function Hero() {
-  const openCalendly = () => {
-    window.open('https://calendar.app.google/vHNGF1iJbx25E8JQ7');
-  };
-
-  const openBenchmarks = () => {
-    window.open('https://insights.krai.ai/benchmarking-kiss-v');
-  }
-
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
       <div className="absolute inset-0 w-screen h-screen">
-        <video src="https://insights.krai.ai/assets/title_background_1.mp4" autoPlay={true} loop={true} muted={true} playsInline={true} className="absolute top-0 left-0 w-full h-full object-cover"></video>
+        <video src="https://insights.krai.ai/assets/title_background_1.mp4#t=5.1" autoPlay={true} loop={true} muted={true} playsInline={true} className="absolute top-0 left-0 w-full h-full object-cover"></video>
       </div>
 
       {/* Content - with relative positioning to appear above background */}
@@ -40,18 +31,18 @@ export default function Hero() {
         </h2>
 
         {/* Padding */}
-        <div className="py-14"></div>
+        {/* <div className="py-14"></div> */}
 
         {/* Subheadline */}
-        <p className="text-xl md:text-2xl text-slate-200 max-w-4xl mx-auto mb-4 leading-relaxed font-normal mt-40">
-          The most powerful inference engine for generative video delivering up to{' '}
+        <p className="text-xl md:text-2xl text-slate-200 max-w-4xl mx-auto mb-4 leading-relaxed font-normal mt-15">
+          Delivering up to{' '}
           <span className="font-medium text-slate-200">14X speedups</span> with no loss in quality.
           <br />
-          Your GPUs will thank you later.
+          {/* Your GPUs will thank you later. */}
         </p>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-10">
+        {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-10">
           <LiquidGlass
             borderRadius={10}
             blur={0.5}
@@ -78,7 +69,7 @@ export default function Hero() {
               Let's Talk
             </button>
           </LiquidGlass>
-        </div>
+        </div> */}
       </div>
     </section>
   );

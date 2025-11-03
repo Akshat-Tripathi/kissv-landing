@@ -12,28 +12,29 @@ export default function Footer() {
             <div className="space-y-3 text-sm">
               <div className="flex items-start gap-3">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0 text-slate-200" />
-                <a href="https://www.google.com/maps/place/ideaSpace+West,+The+Hauser+Forum,+3+Charles+Babbage+Rd,+Cambridge+CB3+0GT/@52.209008,0.0897012,17z/data=!4m5!3m4!1s0x47d8774963902a15:0xfa0c4b40e0313172!8m2!3d52.209008!4d0.0897012" className="text-slate-200">
+                <a href="https://www.google.com/maps/place/ideaSpace+West,+The+Hauser+Forum,+3+Charles+Babbage+Rd,+Cambridge+CB3+0GT/@52.209008,0.0897012,17z/data=!4m5!3m4!1s0x47d8774963902a15:0xfa0c4b40e0313172!8m2!3d52.209008!4d0.0897012" className="text-slate-200 hover:text-blue-500">
                   3 Charles Babbage Road,<br />
                   Ideaspace West,<br />
                   Cambridge,<br />
-                  England, CB3 0GT
+                  England,<br />
+                  CB3 0GT
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 flex-shrink-0 text-slate-200" />
-                <a href="tel:+44 122 348 5090" className="text-slate-200 hover:text-slate-900 transition-colors">
-                  +44 122 348 5090
+                <a href="tel:+44 122 348 5090" className="text-slate-200 hover:text-blue-500 transition-colors">
+                  +44 1223 485 090
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 flex-shrink-0 text-slate-200" />
-                <a href="mailto:info@krai.ai" className="text-slate-200 hover:text-slate-900 transition-colors">
+                <a href="mailto:info@krai.ai" className="text-slate-200 hover:text-blue-500 transition-colors">
                   info@krai.ai
                 </a>
               </div>
               <div className="flex items-center gap-3">
                 <Linkedin className="w-4 h-4 flex-shrink-0 text-slate-200" />
-                <a href="https://www.linkedin.com/company/krai/" className="text-slate-200 hover:text-slate-900 transition-colors">
+                <a href="https://www.linkedin.com/company/krai/" className="text-slate-200 hover:text-blue-500 transition-colors">
                   Linkedin
                 </a>
               </div>
@@ -44,12 +45,12 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Legal</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="#" className="text-slate-200 hover:text-slate-900 transition-colors">
+                <a href="#" className="text-slate-200 hover:text-blue-500 transition-colors">
                   Terms of Service
                 </a>
               </li>
               <li>
-                <a href="#" className="text-slate-200 hover:text-slate-900 transition-colors">
+                <a href="#" className="text-slate-200 hover:text-blue-500 transition-colors">
                   Privacy Policy
                 </a>
               </li>

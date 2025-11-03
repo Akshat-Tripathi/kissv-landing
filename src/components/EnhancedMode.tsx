@@ -32,7 +32,7 @@ export default function EnhancedMode() {
             </GradientText>
           </h2>
           <p className="text-xl text-slate-200 font-light">
-            Enjoy higher quality video with the same number of steps.
+            Enjoy higher quality video at no extra cost!
           </p>
         </div>
 
@@ -51,7 +51,7 @@ export default function EnhancedMode() {
 
         {/* Caption */}
         <p className="text-center text-slate-200 mt-4 font-light">
-          *Both videos generated with the same prompts, number of steps (20), Wan2.2 model, seed and other settings.
+          Both videos generated with Wan2.2, identical prompts, 20 steps, seed and other settings
         </p>
       </div>
 

@@ -4,8 +4,8 @@ import GradientText from './GradientText';
 export default function Performance() {
   // Mock data for the chart
   const data = [
-    { label: 'Diffusers', value: 100, color: 'bg-yellow-500' },
-    { label: 'KISS-V', value: 1400, color: 'bg-green-600' }
+    { label: 'Diffusers', value: 100, color: 'bg-red-500' },
+    { label: 'KISS-V', value: 1400, color: 'bg-green-700' }
   ];
 
   const maxValue = Math.max(...data.map(d => d.value));
@@ -32,34 +32,28 @@ export default function Performance() {
               colors={["#e15f41", "#f19066", "#f5cd79", "#f19066", "#e15f41", "#f19066", "#f5cd79", "#f19066", "#e15f41"]}
               animationSpeed={1}
               showBorder={false}
-              className="text-6xl md:text-7xl font-bold tracking-tight"
+              className="text-6xl md:text-8xl font-bold tracking-tight"
             >
               KISS-V
             </GradientText>
           </h2>
-          <p className="text-3xl font-normal text-slate-200 mb-4">
-            Up to 14x Faster
-          </p>
           <p className="text-xl text-slate-200 max-w-3xl mx-auto font-normal">
-            Faster video generation without sacrificing output quality.
+            Up to 14x faster video generation without sacrificing output quality.
             <br />
           </p>
           <p className="text-xl text-slate-200 max-w-3xl mx-auto font-medium">
-            No Quantisation, No Distillation, No Nonsense.
+            No Quantization, No Distillation, No Cheating.
           </p>
         </div>
 
         {/* Bar Chart */}
-        <div className="max-w-4xl mx-auto bg-neutral-900 rounded-2xl p-12 shadow-sm">
+        <div className="max-w-4xl mx-auto bg-neutral-900 rounded-2xl shadow-sm">
           <div className="space-y-8">
             {data.map((item, index) => (
               <div key={index} className="space-y-3">
                 <div className="flex items-center justify-between">
                   <span className="text-lg font-medium text-slate-200">
                     {item.label}
-                  </span>
-                  <span className="text-lg font-light text-slate-200">
-                    {item.value === 100 ? 'Baseline' : `${item.value / 100}x faster`}
                   </span>
                 </div>
                 <div className="relative h-16 bg-slate-100 rounded-lg overflow-hidden">
@@ -69,11 +63,10 @@ export default function Performance() {
                       width: `${(item.value / maxValue) * 100}%`
                     }}
                   >
-                    {item.value > 200 && (
-                      <span className="text-white font-medium text-lg">
-                        {item.value / 100}x
-                      </span>
-                    )}
+                    <span className="text-white font-medium text-lg">
+                      {item.value / 100}x
+                    </span>
+
                   </div>
                 </div>
               </div>
@@ -83,8 +76,9 @@ export default function Performance() {
           {/* Chart Footer */}
           <div className="mt-8 pt-8 border-t border-slate-200">
             <p className="text-sm text-slate-200 text-center font-light">
-              * Measured using Wan2.2-T2V-A14B on 8xH100. 720x1280 video, 81 frames, 20 steps.
-              <br /> KISS-V achieved 58.3s E2E latency
+              Wan2.2-T2V-A14B 720x1280 video, 81 frames, 20 diffusion steps on 8xH100
+              <br /> E2E latency: KISS-V 58s, Diffusers 825s
+              <br /><a href="https://insights.krai.ai/benchmarking-kiss-v" className='text-blue-500 font-semibold'>See the full benchmarking data here</a>
             </p>
           </div>
         </div>

@@ -1,26 +1,26 @@
-import { Box, Cpu, Palette } from 'lucide-react';
+import { Brain, Gpu, Palette } from 'lucide-react';
 import GradientText from './GradientText';
 
 export default function HowItWorks() {
   const features = [
     {
-      icon: Box,
+      icon: Brain,
       title: 'Any Model',
-      description: 'Create stunning content using your favorite open-source video models Wan, Ovi, Mochi, and more!',
-      colours: ["#ff7675", "#0984e3"],
+      description: 'Create stunning content using your favorite open-source video models: Wan, Ovi, Mochi, and more!',
+      colours: ["#a29bfe", "#ff7675" ],
       offsets: [0, 0.8]
     },
     {
-      icon: Cpu,
+      icon: Gpu,
       title: 'Any GPU',
-      description: 'Effortlessly deploy across a wide range of Nvidia and AMD GPUs to match your precise performance and latency requirements.',
-      colours: ["#0984e3", "#ff7675"],
+      description: 'Effortlessly deploy across a wide range of NVIDIA and AMD GPUs to match your precise performance and cost requirements.',
+      colours: ["#16a085", "#76b900"],
       offsets: [0, 0.4]
     },
     {
       icon: Palette,
       title: 'Any Style',
-      description: 'Personalize your models with any LoRAs or ControlNets you can imagine.',
+      description: 'Personalize your models with any LoRA adapters or ControlNets you can imagine.',
       colours: ["#74b9ff", "#00b894", "#fdcb6e", "#ff7675"],
       offsets: [0.01, 0.2, 0.4, 0.9]
     }
