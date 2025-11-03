@@ -1,9 +1,9 @@
-import DraftMode from './components/DraftMode';
 import EnhancedMode from './components/EnhancedMode';
 import Footer from './components/Footer';
 import Hero from './components/Hero';
 import HowItWorks from './components/HowItWorks';
 import Performance from './components/Performance';
+import TurboMode from './components/TurboMode';
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Hero />
       <HowItWorks />
       <Performance />
-      <DraftMode />
+      <TurboMode />
       <EnhancedMode />
       <Footer />
     </div>
