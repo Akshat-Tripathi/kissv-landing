@@ -41,7 +41,7 @@ export default function TurboMode() {
             </div>
           </div>
           <h2 className="text-slate-200 mb-6 text-6xl md:text-7xl font-bold tracking-tight">
-            Go Even Faster with{' '}
+            Go 2x Faster with{' '}
             <GradientText
               colors={["#74b9ff", "#6c5ce7", "#fab1a0", "#6c5ce7", "#74b9ff", "#6c5ce7", "#fab1a0", "#6c5ce7", "#74b9ff"]}
               animationSpeed={1}

@@ -15,7 +15,7 @@ export default function HowItWorks() {
       title: 'Any GPU',
       description: 'Effortlessly deploy across a wide range of NVIDIA and AMD GPUs to match your precise performance and cost requirements.',
       colours: ["#16a085", "#76b900"],
-      offsets: [0, 0.4]
+      offsets: [0, 0.2]
     },
     {
       icon: Palette,
