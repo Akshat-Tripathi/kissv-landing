@@ -63,10 +63,10 @@ export default function TurboMode() {
 
           <ReactCompareSlider
             itemOne={
-              <video src="https://insights.krai.ai/assets/watch_20_full.mp4" autoPlay={true} loop={true} muted={true} playsInline={true} className="rounded-2xl" />
+              <video src="https://duckforcover.com/kissv/watch_20_full.mp4" autoPlay={true} loop={true} muted={true} playsInline={true} className="rounded-2xl" />
             }
             itemTwo={
-              <video src="https://insights.krai.ai/assets/watch_20.mp4" autoPlay loop muted playsInline className="rounded-2xl" />
+              <video src="https://duckforcover.com/kissv/watch_20.mp4" autoPlay loop muted playsInline className="rounded-2xl" />
             }
           />
 

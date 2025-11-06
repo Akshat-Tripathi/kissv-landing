@@ -41,10 +41,10 @@ export default function EnhancedMode() {
 
           <ReactCompareSlider
             itemOne={
-              <video src="http://camml.com/kiss-v/baking.mp4" autoPlay={true} loop={true} muted={true} playsInline={true} className="rounded-2xl" />
+              <video src="https://duckforcover.com/kiss-v/baking.mp4" autoPlay={true} loop={true} muted={true} playsInline={true} className="rounded-2xl" />
             }
             itemTwo={
-              <video src="http://camml.com/kiss-v/baking_enhanced.mp4" autoPlay loop muted playsInline className="rounded-2xl" />
+              <video src="https://duckforcover.com/kiss-v/baking_enhanced.mp4" autoPlay loop muted playsInline className="rounded-2xl" />
             }
           />
         </div>
