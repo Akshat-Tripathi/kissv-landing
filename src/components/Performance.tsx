@@ -78,7 +78,7 @@ export default function Performance() {
             <p className="text-sm text-slate-200 text-center font-light">
               Wan2.2-T2V-A14B 720x1280 video, 81 frames, 20 diffusion steps on 8xH100
               <br /> E2E latency: KISS-V 58s, Diffusers 825s
-              <br /><a href="https://insights.krai.ai/benchmarking-kiss-v" className='text-blue-500 font-semibold'>See the full benchmarking data here</a>
+              <br /><a href="/benchmarking" className='text-blue-500 font-semibold'>See the full benchmarking data here</a>
             </p>
           </div>
         </div>
